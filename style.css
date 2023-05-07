@@ -10,7 +10,8 @@ html {
 }
 
 
-/* OPCIONES */
+/* NAVEGATION */
+
 .nav-bar{
     width: 100%;
     padding: 20px;
@@ -19,12 +20,14 @@ html {
     left: 0;
     background-color: #FFE6E6;
 }
+
 .nav-ul {
     display: flex;
     justify-content: flex-end;
     list-style-type: none;
     width: 85%;
 }
+
 .nav-link{
     margin: 0 20px;
     text-decoration: none;
@@ -54,15 +57,22 @@ html {
     align-items: center;
 }
 
-.title-hello {
+.cont-presentation {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
+.cont-img-hello {
+    width: 400px;
+    height: 400px;
+    margin-left: 30px;
+    display: flex;
+    justify-content: center;
+}
+
 .mujerprogramadora {
-    width: 300px;
-    height: 300px;
+    width: 100%;
 }
 
 .welcome-title{
@@ -421,7 +431,7 @@ a {
         justify-content: space-evenly;
     }
 
-    .title-hello {
+    .cont-presentation {
         align-items: center;
     }
 
@@ -444,7 +454,7 @@ a {
         font-size: 15px;
     }
 
-    .mujerprogramadora {
+    .cont-img-hello {
         width: 200px;
         height: 200px;
     }
@@ -536,7 +546,7 @@ a {
         justify-content: space-evenly;
     }
 
-    .title-hello {
+    .cont-presentation {
         align-items: center;
     }
 
@@ -554,7 +564,7 @@ a {
         margin: 10px 0;
     }
 
-    .mujerprogramadora {
+    .cont-img-hello {
         width: 250px;
         height: 250px;
     }
@@ -643,7 +653,7 @@ a {
         justify-content: space-evenly;
     }
 
-    .title-hello {
+    .cont-presentation {
         align-items: center;
     }
 
