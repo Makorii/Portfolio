@@ -2,68 +2,105 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-html {
     scroll-behavior: smooth;
     font-family: 'Montserrat', sans-serif;
 }
 
+/* ----- NAVIGATION ----- */
 
-/* NAVEGATION */
-
-.nav-bar{
-    width: 100%;
-    padding: 20px;
-    position: fixed;
+.container-nav {
+    position: sticky;
     top: 0;
-    left: 0;
+}
+
+.nav {
+    padding: 20px;
     background-color: #FFE6E6;
 }
 
-.nav-ul {
+.nav-list {
     display: flex;
     justify-content: flex-end;
     list-style-type: none;
     width: 85%;
 }
 
-.nav-link{
+.nav-link {
     margin: 0 20px;
     text-decoration: none;
     color: black;
-    font-size: 15px;
+    font-size: 0.9rem;
     padding: 5px 10px;
     border-radius: 15px;
 }
 
 .nav-link:hover {
+    color: #A685E2;
+}
+
+.button-nav {
+    text-decoration: none;
+    background-color: #A685E2;
+    border-radius: 15px;
+    padding: 8px 20px;
+    color: white;
+    transition: 0.2s;
+}
+
+/* BOTONES CON HOVER */
+
+.is-hover:hover {
     background-color: #6155A6;
 }
 
-.link-diff {
-    background-color: #BEAEE2;
-    border-radius: 10px;
-    padding: 8px 20px;
-    color: white;
+/* BOTONES CON FOCUS */
+
+.is-focus:focus {
+    box-shadow: 0px 0px 10px #A685E2;
 }
 
-/* SECTION "HOLA" */
+/* ----- SECTION "HOLA" ----- */
 
-.welcome-section {
-    height: 100vh;
+.container-hello {
+    height: calc(100vh - 59px);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.cont-presentation {
+.container-presentation {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
-.cont-img-hello {
+.hello-title {
+    font-weight: 600;
+    font-size: 3.1rem;
+}
+
+span {
+    display: block;
+    font-size: 4.3rem;
+    font-weight: 800;
+    color: #ffabe1;
+}
+
+.hello-description {
+    font-size: 1.8rem;
+    margin: 20px 0;
+}
+
+.button-projects {
+    text-decoration: none;
+    background-color: #A685E2;
+    border-radius: 15px;
+    padding: 10px 30px;
+    color: white;
+    transition: 0.2s;
+}
+
+.container-helloimg {
     width: 400px;
     height: 400px;
     margin-left: 30px;
@@ -71,63 +108,45 @@ html {
     justify-content: center;
 }
 
-.mujerprogramadora {
+.hello-img {
     width: 100%;
 }
 
-.welcome-title{
-    font-weight: 600;
-    font-size: 50px;
-}
-
-span {
-    display: block;
-    font-size: 70px;
-    font-weight: 800;
-    color: #ffabe1;
-}
-
-.welcome-p {
-    font-size: 30px;
-    margin: 20px 0;
-}
-
-.button-projects {
-    background-color: #BEAEE2;
-    border-radius: 15px;
-    padding: 10px 30px;
-    color: white;
-}
-
-/* SECTION "CONOCIMIENTOS" */
-
-.knowledge-section {
+/* ----- SECTION "CONOCIMIENTOS" ----- */
+/* CONTENEDOR FLEXIBLE */
+.flexible-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #ffabe1;
-    padding: 210px 0;
 }
 
-.title-knowledge {
-    font-size: 50px;
+.knowledge-container {
+    padding: 210px 0;
+    background-color: #ffabe1;
+}
+
+.knowledge-title {
+    font-size: 3rem;
     font-weight: 800;
 }
 
-.description {
+.container-description {
     margin: 10px;
     width: 30%;
     text-align: center;
 }
 
-.cards {
+.container-cards {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     margin: 50px;
+    width: 45%;
 }
 
 .card {
-    font-size: 20px;
+    justify-content: center;
+    font-size: 1.25rem;
     font-weight: 700;
     background-color: white;
     margin: 20px;
@@ -135,20 +154,17 @@ span {
     height: 270px;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
     border: 2px solid #ffabe200;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    border-radius: 10px;
+}
+
+.icon-card {
+    font-size: 4.6rem;
+    padding: 10px;
 }
 
 .card:hover {
     border: 2px solid #A685E2;
     color: #6155A6;
-}
-
-.icon-card {
-    font-size: 75px;
-    padding: 10px;
 }
 
 .fa-html5 {
@@ -159,55 +175,57 @@ span {
     color: #3d8fc6;
 }
 
+.fa-sass {
+    color: #cc6699;
+}
+
 .fa-square-js {
     color: #f0db4f;
+}
+
+.fa-react {
+    color: #61dafb;
 }
 
 .fa-git-alt {
     color: #f34f29;
 }
 
-/* CITA */
+/* ----- SECTION "CITA" ----- */
 
 .citation {
     background-color:  #A685E2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding: 80px;
     color: white;
 }
 
-
-.icon-cita {
-    font-size: 80px;
+.icon-citation {
+    font-size: 5rem;
     padding: 50px;
 }
 
 .description-citation {
-    font-size: 22px;
+    font-size: 1.3rem;
     width: 40%;
     text-align: center;
 }
 
-.mention {
+.mention-citation {
     margin: 30px;
     padding: 20px;
-    font-size: 28px;
+    font-size: 1.75rem;
     font-weight: 800;
     font-style: italic;
 }
 
-/* SECTION "MIS PROYECTOS" */
-.projects {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* ----- SECTION "MIS PROYECTOS" ----- */
+
+.projects-container {
     padding: 50px 0;
 }
 
 .title-project {
-    font-size: 50px;
+    font-size: 3.1rem;
     text-align: center;
     margin: 55px;
     color: black;
@@ -216,171 +234,172 @@ span {
 .container-projects {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     width: 70%;
     margin: 50px;
 }
 
-.project-title {
-    display: flex;
-    flex-direction: column;
+.target-project {
     justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    font-size: 16px;
-    padding: 15px;
-    color: black;
-    font-weight: 500;
-}
-
-.container-img {
-    width: 300px;
-    height: 200px;
-    overflow: hidden;
-    margin: 10px;
-}
-
-.img-proyectos {
-    margin: 5px;
-    width: 100%;
-    height: 100%;
-}
-
-.targets {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     margin: 30px;
     background-color: #f2eaf6;
-    padding: 10px;
-    border-radius: 30px;
+    border-radius: 10px;
     border: 1px solid #ffabe200;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
 
-.targets:hover {
+.target-project:hover {
     border: 1px solid #A685E2;
 }
 
-.project-title:hover {
+
+.link-project {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 15px;
+    color: black;
+    font-weight: 500;
+    border-radius: 10px;
+}
+
+.link-project:hover {
     color: #6155A6;
 }
 
-.link1 {
-    text-decoration: none;
-    color: hotpink;
-    text-align: center;
-    font-size: 3rem;
-    display: block;
+.container-project-img {
+    width: 300px;
+    height: 200px;
+    margin: 10px;
 }
 
-/* SECTION "CONTACTO" */
+.img-project {
+    width: 100%;
+    margin: 5px;
+}
 
-.container-contact{
+/* ----- SECTION "CONTACTO" -----*/
+
+.container-contact {
     display: flex;
     justify-content: center;
     margin: 130px 0;
 }
 
-.target-contact {
+.container-targets {
     display: flex;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    width: 70%;
+    width: 60%;
     margin: 70px;
+    padding: 30px;
     border-radius: 10px;
 }
 
-.target-c {
-    width: 50%;
-    padding: 50px;
+.target-contact {
+    width: 60%;
 }
 
 .title-contact {
-    font-size: 50px;
+    font-size: 2.8rem;
+    font-weight: 800;
     margin: 20px 0;
 }
 
-.description-contact {
+.contact-description {
     margin: 20px;
+    width: 70%;
 }
 
 .container-redes {
     display: flex;
     flex-direction: column;
 }
-.contactos{
-    margin: 20px;
+
+.contactos {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+    padding: 8px;
     text-decoration: none;
     color: black;
-    font-size: 18px;
-    transition-property: font-size;
-    transition-duration: 0.5s;
+    font-size: 1rem;
+    border-radius: 30px;
+    width: fit-content;
 }
 
-.colors-icon {
-    color: #BEAEE2;
+.contactos:hover {
+    color: #6155A6;
+}
+
+.icons-contact {
+    color: #a685e2;
     margin: 0 10px;
+    padding: 10px;
+    border-radius: 30px;
+    font-size: 1.12rem;
 }
 
-.contactos:hover{
-    font-size: 20px;
+.contactos:hover .icons-contact {
+    background-color: #6155A6;
+    color: white;
 }
 
-.form {
+
+.form-contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-full-name {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-full-name {
     display: flex;
     flex-direction: column;
 }
 
 label {
     font-weight: 600;
-    margin: 5px;
+    margin: 5px 0;
 }
+
 input {
     border: 0;
-    border-radius: 10px;
+    border-radius: 30px;
     padding: 10px;
-    margin: 5px;
+    margin: 5px 5px 5px 0;
     outline: none;
-    transition: 0.2;
 }
 
-textarea {
+.message-contact {
     border: 0;
     outline: none;
+    resize: none;
+    border-radius: 30px;
+    padding: 15px;
 }
 
-
-input:focus, textarea:focus, .nav-link:focus {
-    box-shadow: 0px 0px 7px #6155A6;
-}
-
-button {
-    text-decoration: none;
-    font-size: 15px;
-    background-color: #BEAEE2;
+.button-contact {
+    font-size: 0.9rem;
+    background-color: #a685e2;
     border: 0;
     padding: 15px 30px;
-    border-radius: 10px;
+    border-radius: 30px;
     color: white;
     margin: 15px;
     cursor: pointer;
+    transition: 0.2s;
 }
 
-button:hover, .link-diff:hover, .button-projects:hover {
-    background-color: #6155A6;
-}
+/* ----- SECTION FOOTER ----- */
 
-/* FOOTER */
-
-
-footer {
+.container-footer {
     background-color: #6155A6;
     padding: 50px;
     text-align: center;
 }
-
 
 .nav-footer {
     display: flex;
@@ -388,336 +407,325 @@ footer {
     list-style: none;
 }
 
-a {
-    text-decoration: none;
-}
-
 .link-footer {
-    margin: 20px;
-    color: #FFE6E6;
-}
-
-.icons-contact {
-    margin: 30px 10px;
-}
-
-
-.i-colors-footer {
     margin: 10px;
-    padding: 13px 15px;
+    color: #FFE6E6;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.icons-container {
+    margin: 30px 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-social {
+    border-radius: 50%;
+    text-decoration: none;
+    margin: 8px;
+}
+
+.icons-footer {
+    padding: 11px 12px;
     border: 1px solid #6155A6;
     border-radius: 50%;
     color: #ffabe1;
-    font-size: 20px;
+    font-size: 18px;
     background-color: #f2eaf6;
     transition: 0.2s;
 }
 
-.i-colors-footer:hover {
-    background-color: #6155A6;
-    border: 1px solid #f2eaf6;
+.icons-footer:hover {
+    color: white;
+    border: 1px solid white;
 }
 
-
-/* MOBILE */
+/* ----- MOBILE ----- */
 
 @media (max-width: 480px) {
-    header {
+    html {
+        font-size: 10px;
+    }
+
+    .container-nav {
         display: none;
     }
 
-    .welcome-section {
+    .container-hello {
         flex-direction: column;
-        justify-content: space-evenly;
+        height: 100vh;
+        margin: 20px 0;
     }
 
-    .cont-presentation {
+    .container-presentation {
         align-items: center;
-    }
-
-    .welcome-title {
-        font-size: 30px;
         text-align: center;
     }
 
-    span {
-        font-size: 40px;
-    }
-
-    .welcome-p {
-        font-size: 18px;
-        margin: 10px 0;
-    }
-
-    .button-projects {
-        padding: 5px 15px;
-        font-size: 15px;
-    }
-
-    .cont-img-hello {
+    .container-helloimg {
         width: 200px;
         height: 200px;
     }
 
-    .knowledge-section {
-        padding: 70px 0;
+    .knowledge-container {
+        padding: 100px 0;
     }
 
-    .title-knowledge {
-        font-size: 25px;
+    .knowledge-title {
+        text-align: center;
     }
 
-    .description {
-        width: 90%;
-        font-size: 14px;
+    .container-cards {
+        width: 70%;
+        margin: 0;
     }
 
-    .cards {
-        justify-content: center;
+    .card {
+        width: 200px;
+        height: 150px;
     }
 
     .citation {
         padding: 60px 0;
     }
-    
-    .description-citation {
-        margin: 10px;
+
+    .container-description {
         width: 90%;
-        font-size: 20px;
     }
 
-    .mention {
-        font-size: 26px;
-        margin: 0;
-        text-align: center;
-    }
-
-    .title-project {
-        font-size: 30px;
-        margin: 35px;
-    }
-
-    .container-contact {
-        margin: 30px;
-    }
-
-    .target-contact {
-        flex-direction: column;
-        width: 100%;
-        box-shadow: none;
-    }
-
-    .title-contact {
-        font-size: 30px;
-    }
-
-    .target-c {
-        padding: 10px;
-        width: 100%;
-    }
-
-    footer {
-        padding: 30px 0;
-    }
-
-    .nav-footer {
-        display: none;
-    }
-
-    .icons-contact {
-        display: flex;
-        justify-content: center;
-    }
-
-    p {
-        font-size: 12px;
-    }
-}
-
-/* TABLETS / iPADS */
-
-@media (max-width: 768px) {
-    header {
-        display: none;
-    }
-
-    .welcome-section {
-        flex-direction: column;
-        justify-content: space-evenly;
-    }
-
-    .cont-presentation {
-        align-items: center;
-    }
-
-    .welcome-title {
-        font-size: 40px;
-        text-align: center;
-    }
-
-    span {
-        font-size: 45px;
-    }
-
-    .welcome-p {
-        font-size: 22px;
+    .container-projects {
         margin: 10px 0;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
     }
 
-    .cont-img-hello {
-        width: 250px;
-        height: 250px;
+    .target-project {
+        margin: 15px 0;
     }
 
-    .knowledge-section {
-        padding: 80px 0;
-    }
-
-    .title-knowledge {
-        font-size: 35px;
-    }
-
-    .description {
-        width: 90%;
-        font-size: 18px;
-    }
-
-    .cards {
-        justify-content: center;
-    }
-
-    .citation {
-        padding: 80px 0;
-    }
-    
-    .description-citation {
-        margin: 10px;
-        width: 90%;
-    }
-
-    .mention {
-        font-size: 26px;
-        margin: 0;
-        text-align: center;
-    }
-
-    .title-project {
-        margin: 35px;
+    .container-project-img {
+        width: 200px;
     }
 
     .container-contact {
         margin: 50px 0;
     }
 
-    .target-contact {
+    .container-targets {
         flex-direction: column;
-        width: 100%;
+        margin: 0;
+        width: 95%;
         box-shadow: none;
-        margin: 10px;
     }
 
-    .title-contact {
-        font-size: 40px;
-    }
-
-    .target-c {
+    .target-contact {
         padding: 10px;
-        width: 100%;
+        width: 90%;
     }
 
-    footer {
-        padding: 30px 0;
+    .container-full-name {
+        flex-direction: column;
     }
 
     .nav-footer {
         display: none;
     }
-
-    .icons-contact {
-        display: flex;
-        justify-content: center;
-    }
-
-    .copyright {
-        font-size: 15px;
-    }
 }
-/* LAPTOPS */
-@media (max-width: 1024px) {
-    header {
+
+/* ----- TABLETS / iPADS ----- */
+
+@media (min-width: 481px) and (max-width: 768px) {
+    html {
+        font-size: 12px;
+    }
+
+    .container-nav {
         display: none;
     }
 
-    .welcome-section {
+    .container-hello {
         flex-direction: column;
-        justify-content: space-evenly;
+        height: 100vh;
+        margin: 20px 0;
     }
 
-    .cont-presentation {
+    .container-presentation {
         align-items: center;
-    }
-
-    .welcome-title {
         text-align: center;
     }
 
-    .welcome-p {
-        margin: 10px 0;
+    .container-helloimg {
+        margin: 0;
     }
 
-    .knowledge-section {
+    .knowledge-container {
         padding: 100px 0;
     }
 
-    .description {
-        width: 90%;
-        font-size: 18px;
-    }
-
-    .cards {
-        justify-content: center;
-    }
-    
-    .description-citation {
-        margin: 10px;
-        width: 90%;
-    }
-
-    .mention {
+    .knowledge-title {
         text-align: center;
     }
 
-    .container-contact {
-        margin: 60px 20px;
+    .container-cards {
+        width: 100%;
+        margin: 10px 0;
     }
 
-    .target-contact {
-        flex-direction: column;
-        width: 100%;
-        box-shadow: none;
+    .card {
+        width: 200px;
+        height: 200px;
         margin: 10px;
     }
 
-    .title-contact {
-        font-size: 40px;
+    .citation {
+        padding: 80px 0;
     }
 
-    .target-c {
-        padding: 10px;
+    .container-description {
+        width: 90%;
+    }
+
+    .container-projects {
+        margin: 10px 0;
         width: 100%;
-    }
-
-    footer {
-        padding: 30px 0;
-    }
-
-    .nav-footer {
-        display: none;
-    }
-
-    .icons-contact {
-        display: flex;
         justify-content: center;
     }
 
+    .target-project {
+        margin: 15px;
+    }
+
+    .container-contact {
+        margin: 50px 0;
+    }
+
+    .container-targets {
+        flex-direction: column;
+        margin: 0;
+        width: 95%;
+        box-shadow: none;
+    }
+
+    .target-contact {
+        padding: 10px;
+        width: 90%;
+    }
+
+    .container-full-name {
+        width: 80%;
+        justify-content: space-between;
+    }
+}
+
+/* ----- LAPTOPS ----- */
+@media (min-width: 769px) and (max-width: 1024px) {
+    html {
+        font-size: 14px;
+    }
+
+    .container-nav {
+        display: none;
+    }
+
+    .container-hello {
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .container-presentation {
+        align-items: center;
+        text-align: center;
+    }
+
+    .container-helloimg {
+        margin: 0;
+    }
+
+    .knowledge-container {
+        padding: 100px 0;
+    }
+
+    .knowledge-title {
+        text-align: center;
+    }
+
+    .container-cards {
+        width: 100%;
+        margin: 30px 0;
+    }
+
+    .card {
+        width: 210px;
+        height: 230px;
+        margin: 10px;
+    }
+
+    .citation {
+        padding: 80px 0;
+    }
+
+    .container-description {
+        width: 90%;
+    }
+
+    .container-projects {
+        margin: 10px 0;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .target-project {
+        margin: 15px;
+    }
+
+    .container-contact {
+        margin: 50px 0;
+    }
+
+    .container-targets {
+        flex-direction: column;
+        margin: 0;
+        width: 95%;
+    }
+
+    .target-contact {
+        padding: 30px;
+        width: 90%;
+    }
+
+    .container-full-name {
+        width: 60%;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+
+    .container-presentation {
+        margin: 0 20px;
+    }
+
+    .container-cards {
+        width: 60%;
+    }
+
+    .description-citation {
+        width: 60%;
+    }
+
+    .container-description {
+        width: 70%;
+    }
+
+    .container-projects {
+        margin: 10px 0;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .container-targets {
+        width: 80%;
+    }
 }

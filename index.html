@@ -1,186 +1,242 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/c99d9e0ff9.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/inifity.svg" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <title>Portfolio</title>
 </head>
 <body>
-    <header>
-        <nav class="nav-bar">
-            <ul class="nav-ul">
-                <li><a href="#welcome-section" class="nav-link">HOLA</a></li>
-                <li><a href="#knowledge" class="nav-link">CONOCIMIENTOS</a></li>
-                <li><a href="#projects" class="nav-link">PROYECTOS</a></li>
-                <li><a href="#contact" class="nav-link link-diff">CONTACTO</a></li>
+    <!-- NAVIGATION -->
+    <header class="container-nav">
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="#welcome-section" class="nav-link is-focus">HOLA</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#knowledge" class="nav-link is-focus">CONOCIMIENTOS</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link is-focus">PROYECTOS</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="button-nav is-hover is-focus">CONTACTO</a>
+                </li>
             </ul>
         </nav>
     </header>
     <!-- SECTION "HOLA" -->
-    <section class="welcome-section" id="welcome-section">
-        <div class="cont-presentation">
-            <h1 class="welcome-title">¡Hola! Soy <span>Marcela Duran</span></h1>
-            <p class="welcome-p">web developer</p>
-            <a href="#projects" class="button-projects">LO QUE HAGO</a>
+    <section class="container-hello" id="welcome-section">
+        <div class="container-presentation">
+            <h1 class="hello-title">¡Hola! Soy <span>Marcela Duran</span></h1>
+            <p class="hello-description">mamá gamer estudiante de programación(? </p>
+            <a href="#projects" class="button-projects is-hover is-focus">LO QUE HAGO</a>
         </div>
-        <div class="cont-img-hello">
-            <img src="img/mujer programadora.png" alt="dibujo de una mujer programando" class="mujerprogramadora">
+        <div class="container-helloimg">
+            <img src="img/mujer programadora.png" alt="dibujo de una mujer programando" class="hello-img">
         </div>
     </section>
     <main>
-    <!-- SECTION "CONOCIMIENTOS" -->
-    <section class="knowledge-section" id="knowledge">
-        <h2 class="title-knowledge">Mis conocimientos</h2>
-        <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus libero magni dolores qui dolorem unde porro et quia quas optio.</p>
-        <div class="cards">
-            <article class="card">
+        <!-- SECTION "CONOCIMIENTOS" -->
+    <section class="flexible-container knowledge-container" id="knowledge">
+        <h2 class="knowledge-title">Mis conocimientos</h2>
+        <p class="container-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus libero magni dolores qui dolorem unde porro et quia quas optio.</p>
+        <div class="container-cards">
+            <figure class="card flexible-container">
                 <i class="fa-brands fa-html5 icon-card"></i>
-                <p>HTML</p>
-            </article>
-            <article class="card">
+                <figcaption>HTML</figcaption>
+            </figure>
+            <figure class="card flexible-container">
                 <i class="fa-brands fa-css3-alt icon-card"></i>
-                <p>CSS</p>
-            </article>
-            <article class="card">
+                <figcaption>CSS</figcaption>
+            </figure>
+            <figure class="card flexible-container">
+                <i class="fa-brands fa-sass icon-card"></i>
+                <figcaption>Sass</figcaption>
+            </figure>
+            <figure class="card flexible-container">
                 <i class="fa-brands fa-square-js icon-card"></i>
-                <p>JavaScript</p>
-            </article>
-            <article class="card">
+                <figcaption>JavaScript</figcaption>
+            </figure>
+            <figure class="card flexible-container">
+                <i class="fa-brands fa-react icon-card"></i>
+                <figcaption>React</figcaption>
+            </figure>
+            <figure class="card flexible-container">
                 <i class="fa-brands fa-git-alt icon-card"></i>
-                <p>GIT</p>
-            </article>
+                <figcaption>GIT</figcaption>
+            </figure>
         </div>
     </section>
     <!-- CITA -->
-    <section class="citation">
-        <i class="fa-solid fa-quote-right icon-cita"></i>
+    <section class="flexible-container citation">
+        <i class="fa-solid fa-quote-right icon-citation"></i>
         <p class="description-citation">
             “El peor enemigo del conocimiento no es la ignorancia, es la ilusión del conocimiento”.
         </p>
-        <h2 class="mention">Stephen Hawking</h2>
+        <h2 class="mention-citation">Stephen Hawking</h2>
     </section>
     <!-- SECTION "MIS PROYECTOS" -->
-    <section class="projects" id="projects">
+    <section class="flexible-container projects-container" id="projects">
         <h2 class="title-project">Mis proyectos</h2>
-        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum aspernatur saepe ipsum rem qui cumque molestias nisi aperiam consequatur, quis ullam molestiae? Nemo cumque commodi quaerat magnam adipisci nihil facere.</p>
+        <p class="container-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum aspernatur saepe ipsum rem qui cumque molestias nisi aperiam consequatur, quis ullam molestiae? Nemo cumque commodi quaerat magnam adipisci nihil facere.</p>
         <div class="container-projects">
-            <article class="targets">
-                <a class="project-title" href="https://makorii.github.io/Primer-proyecto/" target="_blank">
-                <div class="container-img">
-                    <img src="https://rare-gallery.com/thumbs/536768-michael-jackson.jpg" alt="Primer proyecto de Marce: resumen de su biografía." class="img-proyectos">
-                </div>
-                <p>Michael Jackson</p>
-                </a>
-            </article>
-            <article class="targets">
-                <a class="project-title" href="https://makorii.github.io/Segundo-Proyecto/" target="_blank">
-                    <div class="container-img">
-                        <img src="https://media.istockphoto.com/id/1160273393/es/v%C3%ADdeo/animaci%C3%B3n-empresarial-de-las-personas.jpg?b=1&s=640x640&k=20&c=crMg7V5TrNaJTKehuVsNR2NXvZBxfMxVzvCMDPhcmtQ=" alt="Segundo proyecto de Marce: un formulario." class="img-proyectos">
+            <article class="flexible-container target-project">
+                <a href="#" target="_blank" class="flexible-container link-project is-focus">
+                    <div class="container-project-img">
+                        <img src="img/imagen-portfolio.png" alt="imagen del proyecto: Portfolio" class="img-project">
                     </div>
-                    <p>Formulario</p>
+                    <p>
+                        Portfolio
+                    </p>
                 </a>
             </article>
-            <article class="targets">
-                <a class="project-title" href="https://makorii.github.io/Tercer-proyecto/" target="_blank">
-                    <div class="container-img">
-                        <img src="https://twofunnelsaway.com/wp-content/uploads/2021/12/Image-2021-12-26-at-9.37.05-AM.png" alt="Tercer proyecto: landing page." class="img-proyectos">
+            <article class="flexible-container target-project">
+                <a href="#" target="_blank" class="flexible-container link-project is-focus">
+                    <div class="container-project-img">
+                        <img src="https://frontend-proyecto-portfolio.adaitw.org/images/undraw_mobile_user_7oqo.png" alt="imagen del generador de memes" class="img-project">
                     </div>
-                    <p>Landing Page</p>
+                    <p>
+                        Generador de memes
+                    </p>
                 </a>
             </article>
-            <article class="targets">
-                <a class="project-title" href="https://makorii.github.io/Cuarto-proyecto/" target="_blank">
-                    <div class="container-img">
-                        <img src="https://img.freepik.com/premium-vector/modern-flat-design-html-file-icon-web-simple-style_599062-451.jpg?w=2000" class="img-proyectos">
+            <article class="flexible-container target-project">
+                <a href="#" target="_blank" class="flexible-container link-project is-focus">
+                    <div class="container-project-img">
+                        <img src="https://frontend-proyecto-portfolio.adaitw.org/images/undraw_old_day_6x25.png" alt="imagen del proyecto: match 3" class="img-project">
                     </div>
-                    <p>Documentación HTML</p>
+                    <p>
+                        Match 3
+                    </p>
                 </a>
             </article>
-            <article class="targets">
-                <a class="project-title" href="https://proyecto-final-snowy.vercel.app/" target="_blank">
-                    <div class="container-img">
-                        <img src="https://www.xtrafondos.com/wallpapers/resized/rick-y-morty-escapando-de-portal-9235.jpg?s=large" alt="Quinto proyecto: Rick y Morty" class="img-proyectos">
+            <article class="flexible-container target-project">
+                <a href="#" target="_blank" class="flexible-container link-project is-focus">
+                    <div class="container-project-img">
+                        <img src="https://frontend-proyecto-portfolio.adaitw.org/images/undraw_wallet_aym5.png" alt="imagen del proyecto: controlador de gastos" class="img-project">
                     </div>
-                    <p>Rick & Morty</p>
+                    <p>
+                        Controlador de gastos
+                    </p>
                 </a>
             </article>
-            <article class="targets">
-                <a class="project-title" href="https://building-security-seven.vercel.app/" target="_blank">
-                    <div class="container-img">
-                        <img src="img/BS.png" alt="Sexto proyecto: Landing page para una empresa de seguridad" class="img-proyectos">
+            <article class="flexible-container target-project">
+                <a href="#" target="_blank" class="flexible-container link-project is-focus">
+                    <div class="container-project-img">
+                        <img src="https://frontend-proyecto-portfolio.adaitw.org/images/undraw_calendar_dutt.png" alt="imagen del proyecto: administrador de reuniones" class="img-project">
                     </div>
-                    <p>Landing page de Building Security</p>
+                    <p>
+                        Administrador de reuniones
+                    </p>
                 </a>
             </article>
+            <article class="flexible-container target-project">
+                <a href="#" target="_blank" class="flexible-container link-project is-focus">
+                    <div class="container-project-img">
+                        <img src="https://frontend-proyecto-portfolio.adaitw.org/images/undraw_to_do_list_a49b.png" alt="imagen del proyecto: todo app" class="img-project">
+                    </div>
+                    <p>
+                        Todo app
+                    </p>
+                </a>
+            </article>
+            <article class="flexible-container target-project">
+                <a href="#" target="_blank" class="flexible-container link-project is-focus">
+                    <div class="container-project-img">
+                        <img src="https://frontend-proyecto-portfolio.adaitw.org/images/undraw_movie_night_fldd.png" alt="imagen del proyecto: buscador de películas" class="img-project">
+                    </div>
+                    <p>
+                        Buscador de películas
+                    </p>
+                </a>
+            </article>
+            
         </div>
     </section>
     <!-- SECTION "CONTACTO" -->
     <section class="container-contact" id="contact">
-        <div class="target-contact">
-            <div class="target-c">
+        <div class="container-targets">
+            <div class="target-contact">
                 <h3 class="title-contact">Contactame</h3>
-                <p class="description-contact">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi eum quos repellendus expedita nisi consequatur doloremque tempora reprehenderit ducimus inventore.</p>
+                <p class="contact-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi eum quos repellendus expedita nisi consequatur doloremque tempora reprehenderit ducimus inventore.</p>
                 <div class="container-redes">
-                    <a class="contactos" href="https://github.com/Makorii" target="_blank">
-                        <i class="fa-brands fa-github-square colors-icon"></i>Github
+                    <a class="contactos is-focus" href="https://twitter.com/Makori_Twitch" target="_blank">
+                        <i class="fa-brands fa-twitter icons-contact"></i>
+                        @MarcelaDuran
                     </a>
-                    <a class="contactos" href="mailto:marcelaromina.d@hotmail.com">
-                        <i class="fa-solid fa-envelope colors-icon"></i>Email
+                    <a class="contactos is-focus" href="https://github.com/Makorii" target="_blank">
+                        <i class="fa-brands fa-github-alt icons-contact"></i>
+                        Marcela Duran
                     </a>
-                    <a class="contactos" href="https://www.instagram.com/x__marce__x/" target="_blank">
-                        <i class="fa-brands fa-instagram-square colors-icon"></i>Instagram
+                    <a class="contactos is-focus" href="https://www.linkedin.com/in/marcela-duran-842385241/" target="_blank">
+                        <i class="fa-brands fa-linkedin-in icons-contact"></i>
+                        Marcela Duran
                     </a>
-                    <a class="contactos" href="tel:1534162485">
-                        <i class="fa-solid fa-mobile-screen-button colors-icon"></i>Teléfono
+                    <a class="contactos is-focus" href="mailto:marcelaromina.d@hotmail.com">
+                        <i class="fa-solid fa-envelope icons-contact"></i>marcelaromina.d@hotmail.com
                     </a>
                 </div>
             </div>
-            <form class="target-c">
+            <form class="target-contact" id="form">
                 <h3 class="title-contact">Escribeme</h3>
-                <div class="form">
-                    <label for="name">Nombre</label>
-                    <input id="name" type="text" placeholder="Introduzca su nombre">
-                    <label for="name">Apellido</label>
-                    <input id="name" type="text" placeholder="Introduzca su apellido">
-                    <label for="email">Email</label>
-                    <input id="email" type="text" placeholder="Introduce tu correo electronico">
-                    <label for="menssage">Mensaje</label>
-                    <textarea id="message" name="Mensaje" cols="40" required rows="10"  placeholder="Escriba aqui su mensaje"></textarea>
+                <div class="form-contact">
+                    <div class="container-full-name">
+                        <label for="name" class="form-full-name">Nombre*
+                            <input id="name" type="text" placeholder="Introduzca su nombre" class="is-focus">
+                        </label>
+                        <label for="lastname" class="form-full-name">Apellido*
+                            <input id="lastname" type="text" placeholder="Introduzca su apellido" class="is-focus">
+                        </label>
+                    </div>
+                    <label for="email">Email*</label>
+                    <input id="email" type="email" placeholder="Introduce tu correo electronico" class="is-focus">
+                    <label for="menssage">Mensaje*</label>
+                    <textarea id="message" name="Mensaje" cols="40" required rows="10"  placeholder="Escriba aqui su mensaje" class="message-contact is-focus"></textarea>
                 </div>
-                <button type="submit">Enviar</button>
+                <input type="submit" class="button-contact is-focus is-hover">
             </form>
         </div>
     </section>
-    </main>
     <!-- FOOTER -->
-    <footer>
+    <footer class="container-footer">
         <ul class="nav-footer">
-            <li><a href="#welcome-section" class="link-footer">HOLA</a></li>
-            <li><a href="#knowledge" class="link-footer">CONOCIMIENTOS</a></li>
-            <li><a href="#projects" class="link-footer">PROYECTOS</a></li>
-            <li><a href="#contact" class="link-footer">CONTACTO</a></li>
+            <li>
+                <a href="#welcome-section" class="link-footer is-focus">HOLA</a>
+            </li>
+            <li>
+                <a href="#knowledge" class="link-footer is-focus">CONOCIMIENTOS</a>
+            </li>
+            <li>
+                <a href="#projects" class="link-footer is-focus">PROYECTOS</a>
+            </li>
+            <li>
+                <a href="#contact" class="link-footer is-focus">CONTACTO</a>
+            </li>
         </ul>
-        <div class="icons-contact">
-            <a href="https://github.com/Makorii" target="_blank">
-                <i class="fa-brands fa-github-square i-colors-footer"></i>
+        <div class="icons-container">
+            <a href="https://twitter.com/Makori_Twitch" target="_blank" class="footer-social is-focus">
+                <i class="fa-brands fa-twitter icons-footer is-hover"></i>
             </a>
-            <a href="mailto:marcelaromina.d@hotmail.com">
-                <i class="fa-solid fa-envelope i-colors-footer"></i>
+            <a href="https://github.com/Makorii" class="footer-social is-focus">
+                <i class="fa-brands fa-github-alt icons-footer is-hover"></i>
             </a>
-            <a href="https://www.instagram.com/x__marce__x/" target="_blank">
-                <i class="fa-brands fa-instagram-square i-colors-footer"></i>
+            <a href="https://www.linkedin.com/in/marcela-duran-842385241/" class="footer-social is-focus" target="_blank">
+                <i class="fa-brands fa-linkedin-in icons-footer is-hover"></i>
             </a>
-            <a href="tel:1534162485">
-                <i class="fa-solid fa-mobile-screen-button i-colors-footer"></i>
+            <a href="mailto:marcelaromina.d@hotmail.com" class="footer-social is-focus" target="_blank">
+                <i class="fa-solid fa-envelope icons-footer is-hover"></i>
             </a>
         </div>
         <p class="copyright">✨Hecho con ❤ por: Marcela Duran.✨</p> 
     </footer>
+    </main>
 </body>
 </html>
