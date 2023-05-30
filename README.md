@@ -1,6 +1,6 @@
 # Portfolio
 
-[imagen del portfolio](https://raw.githubusercontent.com/Makorii/Portfolio/master/img/imagen-portfolio.png)
+<img scr="./assets/imagen-portfolio">
 
 ## Primer proyecto ADAITW: Potfolio
 
