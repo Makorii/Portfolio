@@ -4,7 +4,9 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: 'Montserrat', sans-serif;
+    list-style: none;
 }
+
 
 /* ----- NAVIGATION ----- */
 
@@ -21,7 +23,6 @@
 .nav-list {
     display: flex;
     justify-content: flex-end;
-    list-style-type: none;
     width: 85%;
 }
 
@@ -126,7 +127,7 @@ span {
 }
 
 .knowledge-title {
-    font-size: 3rem;
+    font-size: 2.8rem;
     font-weight: 800;
 }
 
@@ -233,9 +234,10 @@ span {
 
 .container-projects {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    width: 70%;
-    margin: 50px;
+    width: 65%;
+    margin: 50px auto;
 }
 
 .target-project {
@@ -271,6 +273,10 @@ span {
     width: 300px;
     height: 200px;
     margin: 10px;
+}
+
+.name-project {
+    margin: 20px 0;
 }
 
 .img-project {
@@ -404,7 +410,6 @@ input {
 .nav-footer {
     display: flex;
     justify-content: center;
-    list-style: none;
 }
 
 .link-footer {
@@ -445,17 +450,17 @@ input {
 
 @media (max-width: 480px) {
     html {
-        font-size: 10px;
+        font-size: 12px;
     }
-
+/* NAVIGATION */
     .container-nav {
         display: none;
     }
-
+/* SECTION "HOLA" */
     .container-hello {
         flex-direction: column;
         height: 100vh;
-        margin: 20px 0;
+        margin: 20px 10px;
     }
 
     .container-presentation {
@@ -467,7 +472,7 @@ input {
         width: 200px;
         height: 200px;
     }
-
+/* SECTION CONOCIMIENTOS */
     .knowledge-container {
         padding: 100px 0;
     }
@@ -485,15 +490,22 @@ input {
         width: 200px;
         height: 150px;
     }
-
+/* SECTION "CITA" */
     .citation {
         padding: 60px 0;
     }
 
+    .description-citation {
+        width: 80%;
+    }
+    
+    .mention-citation {
+        margin: 20px 0;
+    }
+/* SECTION "MIS PROYECTOS" */
     .container-description {
         width: 90%;
     }
-
     .container-projects {
         margin: 10px 0;
         flex-direction: column;
@@ -508,7 +520,7 @@ input {
     .container-project-img {
         width: 200px;
     }
-
+/* SECTION "CONTACTO" */
     .container-contact {
         margin: 50px 0;
     }
@@ -516,19 +528,34 @@ input {
     .container-targets {
         flex-direction: column;
         margin: 0;
+        padding: 0;
         width: 95%;
         box-shadow: none;
     }
 
     .target-contact {
         padding: 10px;
-        width: 90%;
+        width: 100%;
+    }
+    .contact-description {
+        margin: 0;
+        width: 100%;
+    }
+
+    .contactos {
+        margin: 0;
+        padding: 0;
+    }
+
+    .icons-contact {
+        padding: 10px 2px;
+        margin: 0 10px 0 0;
     }
 
     .container-full-name {
         flex-direction: column;
     }
-
+/* SECTION "FOOTER" */
     .nav-footer {
         display: none;
     }
@@ -538,7 +565,7 @@ input {
 
 @media (min-width: 481px) and (max-width: 768px) {
     html {
-        font-size: 12px;
+        font-size: 13px;
     }
 
     .container-nav {
