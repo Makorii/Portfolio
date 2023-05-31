@@ -1,6 +1,6 @@
 # Portfolio
 
-<img scr="./assets/imagen-portfolio">
+<img scr="https://i.imgur.com/RclxOmC.png" alt="imagen de mi portfolio">
 
 ## Primer proyecto ADAITW: Potfolio
 
