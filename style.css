@@ -61,11 +61,21 @@
 }
 
 /* ----- SECTION "HOLA" ----- */
+/* CONTENEDORES FLEXIBLES */
+.flexible-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.centralized-container {
+    display: flex;
+    justify-content: center;
+}
+/*--------------------------------------*/
 
 .container-hello {
     height: calc(100vh - 59px);
-    display: flex;
-    justify-content: center;
     align-items: center;
 }
 
@@ -105,8 +115,6 @@ span {
     width: 400px;
     height: 400px;
     margin-left: 30px;
-    display: flex;
-    justify-content: center;
 }
 
 .hello-img {
@@ -114,16 +122,13 @@ span {
 }
 
 /* ----- SECTION "CONOCIMIENTOS" ----- */
-/* CONTENEDOR FLEXIBLE */
-.flexible-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.section-knowledge {
+    padding: 210px 0;
+    background-color: #ffabe1;
 }
 
 .knowledge-container {
-    padding: 210px 0;
-    background-color: #ffabe1;
+    width: 900px;
 }
 
 .knowledge-title {
@@ -138,11 +143,8 @@ span {
 }
 
 .container-cards {
-    display: flex;
-    justify-content: center;
     flex-wrap: wrap;
     margin: 50px;
-    width: 45%;
 }
 
 .card {
@@ -220,9 +222,11 @@ span {
 }
 
 /* ----- SECTION "MIS PROYECTOS" ----- */
-
-.projects-container {
+.container-projects {
     padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    width: 1090px;
 }
 
 .title-project {
@@ -232,17 +236,14 @@ span {
     color: black;
 }
 
-.container-projects {
+.projects {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    width: 65%;
-    margin: 50px auto;
 }
 
 .target-project {
     justify-content: center;
-    margin: 30px;
+    margin: 5px;
     background-color: #f2eaf6;
     border-radius: 10px;
     border: 1px solid #ffabe200;
@@ -287,17 +288,14 @@ span {
 /* ----- SECTION "CONTACTO" -----*/
 
 .container-contact {
-    display: flex;
-    justify-content: center;
     margin: 130px 0;
 }
 
 .container-targets {
-    display: flex;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     width: 60%;
     margin: 70px;
-    padding: 30px;
+    padding: 50px;
     border-radius: 10px;
 }
 
@@ -358,7 +356,6 @@ span {
 
 .container-full-name {
     display: flex;
-    flex-wrap: wrap;
 }
 
 .form-full-name {
@@ -371,20 +368,20 @@ label {
     margin: 5px 0;
 }
 
-.form-box:valid {
-    border: 1px solid #88c468;
-}
-
-.form-box:invalid {
-    border: 1px solid #f54154;
-}
-
-input {
+.form-box {
     border: 0;
     border-radius: 30px;
     padding: 10px;
     margin: 5px 5px 5px 0;
     outline: none;
+}
+
+.form-box:valid:focus {
+    border: 1px solid #88c468;
+}
+
+.form-box:invalid:focus {
+    border: 1px solid #f54154;
 }
 
 .message-contact {
@@ -415,11 +412,6 @@ input {
     text-align: center;
 }
 
-.nav-footer {
-    display: flex;
-    justify-content: center;
-}
-
 .link-footer {
     margin: 10px;
     color: #FFE6E6;
@@ -429,8 +421,6 @@ input {
 
 .icons-container {
     margin: 30px 10px;
-    display: flex;
-    justify-content: center;
 }
 
 .footer-social {
@@ -481,7 +471,7 @@ input {
         height: 200px;
     }
 /* SECTION CONOCIMIENTOS */
-    .knowledge-container {
+    .section-knowledge {
         padding: 100px 0;
     }
 
@@ -490,13 +480,13 @@ input {
     }
 
     .container-cards {
-        width: 70%;
         margin: 0;
     }
 
     .card {
         width: 200px;
         height: 150px;
+        margin: 8px;
     }
 /* SECTION "CITA" */
     .citation {
@@ -514,11 +504,9 @@ input {
     .container-description {
         width: 90%;
     }
-    .container-projects {
-        margin: 10px 0;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
+
+    .projects {
+        justify-content: center;
     }
 
     .target-project {
@@ -595,8 +583,8 @@ input {
         margin: 0;
     }
 
-    .knowledge-container {
-        padding: 100px 0;
+    .section-knowledge {
+        padding: 150px 0;
     }
 
     .knowledge-title {
@@ -622,14 +610,18 @@ input {
         width: 90%;
     }
 
-    .container-projects {
-        margin: 10px 0;
-        width: 100%;
+    
+    .projects {
         justify-content: center;
     }
 
     .target-project {
         margin: 15px;
+    }
+
+    .container-project-img {
+        width: 350px;
+        height: 250px;
     }
 
     .container-contact {
@@ -678,8 +670,8 @@ input {
         margin: 0;
     }
 
-    .knowledge-container {
-        padding: 100px 0;
+    .section-knowledge {
+        padding: 190px 0;
     }
 
     .knowledge-title {
@@ -687,7 +679,7 @@ input {
     }
 
     .container-cards {
-        width: 80%;
+        width: 90%;
         margin: 30px 0;
     }
 
@@ -706,9 +698,7 @@ input {
     }
 
     .container-projects {
-        margin: 10px 0;
-        width: 100%;
-        justify-content: center;
+        width: 768px;
     }
 
     .target-project {
@@ -742,10 +732,6 @@ input {
         margin: 0 20px;
     }
 
-    .container-cards {
-        width: 60%;
-    }
-
     .description-citation {
         width: 60%;
     }
@@ -755,9 +741,11 @@ input {
     }
 
     .container-projects {
-        margin: 10px 0;
-        width: 100%;
-        justify-content: center;
+        width: 945px;
+    }
+
+    .container-project-img {
+        width: 250px;
     }
 
     .container-targets {
