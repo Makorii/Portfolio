@@ -4,6 +4,8 @@
 
 ## Primer proyecto ADAITW: Potfolio
 
+Esta primera consigna consiste en realizar un portfolio personal, donde veremos reflejado (a medida que pase el tiempo) los distintos proyectos que iré haciendo.
+
 Este es el primer proyecto a presentar. En donde tuve que utilizar HTML y CSS para lograr copiar el diseño de ejemplo.
 
 :page_facing_up: [Aquí puede ver el modelo](https://frontend-proyecto-portfolio.adaitw.org/)
