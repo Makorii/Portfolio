@@ -2,7 +2,7 @@
 
 ![imagen del portfolio](https://i.imgur.com/RclxOmC.png)
 
-## Primer proyecto ADAITW: Potfolio
+## Primer proyecto ADAITW: Portfolio
 
 Esta primera consigna consiste en realizar un portfolio personal, donde va a ver reflejado (a medida que pase el tiempo) los distintos proyectos que iré haciendo.
 
