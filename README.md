@@ -14,8 +14,8 @@ Esta primera consigna consiste en realizar un portfolio personal, donde va a ver
 
 ### Lenguajes utilizados: 
 
-![html](https://i.imgur.com/7tTfHiE.png) 
-![html](https://i.imgur.com/HhupQTd.png)
+![html](https://i.imgur.com/h6Nw2gu.png)
+![html](https://i.imgur.com/4Tq56tu.png)
 
 *Para la construcción de este proyecto se utilizó HTML semántico y CSS (flexbox, pseudoclases, pseudoelementos, media queries y más)*
 
@@ -39,4 +39,4 @@ Esta primera consigna consiste en realizar un portfolio personal, donde va a ver
 
 **Hecho por:**
 
-:woman_technologist: ***Marcela Duran*** :purple_heart:
+:woman_technologist: ***Marcela Duran** :purple_heart:
