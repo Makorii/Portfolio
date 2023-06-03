@@ -6,7 +6,7 @@
 
 Este es el primer proyecto a presentar. En donde tuve que utilizar HTML y CSS para lograr copiar el diseño de ejemplo.
 
-:memo: [Aquí puede ver el modelo](https://frontend-proyecto-portfolio.adaitw.org/)
+:page_facing_up: [Aquí puede ver el modelo](https://frontend-proyecto-portfolio.adaitw.org/)
 
 
 :open_file_folder: [Aquí el proyecto deployado](https://makorii.github.io/Portfolio/)
@@ -27,4 +27,5 @@ Este es el primer proyecto a presentar. En donde tuve que utilizar HTML y CSS pa
 * El repositorio en GitHub debe tener un readme adecuado :heavy_check_mark:
 
 Hecho por:
-:woman_technologist: *_Marcela Duran_*
+
+:woman_technologist: *Marcela Duran* :purple_heart:
