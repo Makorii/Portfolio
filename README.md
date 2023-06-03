@@ -1,4 +1,4 @@
-:star: # Portfolio :star:
+# Portfolio :sparkles:
 
 ![imagen del portfolio](https://i.imgur.com/RclxOmC.png)
 
