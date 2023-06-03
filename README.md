@@ -28,4 +28,4 @@ Este es el primer proyecto a presentar. En donde tuve que utilizar HTML y CSS pa
 
 Hecho por:
 
-:woman_technologist: *Marcela Duran* :purple_heart:
+:woman_technologist: **Marcela Duran** :purple_heart:
