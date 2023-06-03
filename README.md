@@ -7,6 +7,8 @@
 Este es el primer proyecto a presentar. En donde tuve que utilizar HTML y CSS para lograr copiar el diseño de ejemplo.
 
 :memo: [Aquí puede ver el modelo](https://frontend-proyecto-portfolio.adaitw.org/)
+
+
 :open_file_folder: [Aquí el proyecto deployado](https://makorii.github.io/Portfolio/)
 
 ### El proyecto cuenta con los siguientes requisitos:
