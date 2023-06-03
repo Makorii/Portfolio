@@ -39,4 +39,4 @@ Esta primera consigna consiste en realizar un portfolio personal, donde va a ver
 
 **Hecho por:**
 
-:woman_technologist: ***Marcela Duran** :purple_heart:
+:woman_technologist: ***Marcela Duran*** :purple_heart:
