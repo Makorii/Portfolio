@@ -35,6 +35,8 @@ Esta primera consigna consiste en realizar un portfolio personal, donde va a ver
 * El portfolio debe estar deployado y ser accesible desde una URL :heavy_check_mark:
 * El repositorio en GitHub debe tener un readme adecuado :heavy_check_mark:
 
-Hecho por:
 
-:woman_technologist: **Marcela Duran** :purple_heart:
+
+**Hecho por:**
+
+:woman_technologist: ***Marcela Duran*** :purple_heart:
