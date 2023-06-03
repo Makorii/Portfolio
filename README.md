@@ -1,6 +1,6 @@
-# Portfolio
+:star: # Portfolio :star:
 
-<img src="https://i.imgur.com/RclxOmC.png" alt="imagen de mi portfolio"/>
+![imagen del portfolio](https://i.imgur.com/RclxOmC.png)
 
 ## Primer proyecto ADAITW: Potfolio
 
