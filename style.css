@@ -649,11 +649,17 @@ label {
 
     .contact-description {
         margin: 10px 5px;
+        width: 60%;
     }
-
+    
+    .container-redes {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
     .contactos {
         margin: 0;
         padding: 5px;
+        width: 50%;
     }
 
     .icons-contact {
@@ -737,11 +743,27 @@ label {
         flex-direction: column;
         margin: 0;
         width: 95%;
+        padding: 25px;
+        box-shadow: none;
     }
 
     .target-contact {
-        padding: 30px;
+        padding: 0;
         width: 90%;
+    }
+
+    .contact-description {
+        width: 60%;
+        margin: 15px 0;
+    }
+
+    .container-redes {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .contactos {
+        width: 40%;
     }
 
     .container-full-name {
@@ -774,5 +796,9 @@ label {
 
     .container-targets {
         width: 80%;
+    }
+
+    .contact-description {
+        width: 90%;
     }
 }
