@@ -451,6 +451,11 @@ label {
     html {
         font-size: 12px;
     }
+
+    .is-focus:focus {
+        box-shadow: none;
+    }
+
 /* NAVIGATION */
     .container-nav {
         display: none;
@@ -485,7 +490,7 @@ label {
     }
 
     .card {
-        width: 200px;
+        width: 170px;
         height: 150px;
         margin: 8px;
     }
@@ -516,6 +521,7 @@ label {
 
     .container-project-img {
         width: 200px;
+        height: auto;
     }
 /* SECTION "CONTACTO" */
     .container-contact {
@@ -535,7 +541,7 @@ label {
         width: 100%;
     }
     .contact-description {
-        margin: 0;
+        margin: 8px 0;
         width: 100%;
     }
 
@@ -545,8 +551,8 @@ label {
     }
 
     .icons-contact {
-        padding: 10px 2px;
-        margin: 0 10px 0 0;
+        padding: 8px;
+        margin: 5px 10px 0 0;
     }
 
     .container-full-name {
@@ -564,11 +570,11 @@ label {
     html {
         font-size: 13px;
     }
-
+/* NAVIGATION */
     .container-nav {
         display: none;
     }
-
+/* SECTION "HOLA" */
     .container-hello {
         flex-direction: column;
         height: 100vh;
@@ -587,7 +593,7 @@ label {
     .section-knowledge {
         padding: 150px 0;
     }
-
+/* SECTION "CONOCIMIENTOS" */
     .knowledge-title {
         text-align: center;
     }
@@ -602,7 +608,7 @@ label {
         height: 200px;
         margin: 10px;
     }
-
+/* SECTION "CITA" */
     .citation {
         padding: 80px 0;
     }
@@ -610,7 +616,7 @@ label {
     .container-description {
         width: 90%;
     }
-
+/* SECTION "PROYECTOS" */
     
     .projects {
         justify-content: center;
@@ -624,7 +630,7 @@ label {
         width: 350px;
         height: 250px;
     }
-
+/* SECTION "CONTACTO" */
     .container-contact {
         margin: 50px 0;
     }
@@ -634,16 +640,33 @@ label {
         margin: 0;
         width: 95%;
         box-shadow: none;
+        padding: 0;
     }
 
     .target-contact {
-        padding: 10px;
         width: 90%;
+    }
+
+    .contact-description {
+        margin: 10px 5px;
+    }
+
+    .contactos {
+        margin: 0;
+        padding: 5px;
+    }
+
+    .icons-contact {
+        margin: 0 5px;
     }
 
     .container-full-name {
         width: 80%;
         justify-content: space-between;
+    }
+
+    .nav-footer {
+        display: none;
     }
 }
 
