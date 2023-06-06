@@ -74,12 +74,12 @@
 }
 /*--------------------------------------*/
 
-.container-hello {
+.section-presentation {
     height: calc(100vh - 59px);
     align-items: center;
 }
 
-.container-presentation {
+.presentation-container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -111,13 +111,13 @@ span {
     transition: 0.2s;
 }
 
-.container-helloimg {
+.container-presentation-img {
     width: 400px;
     height: 400px;
     margin-left: 30px;
 }
 
-.hello-img {
+.presentation-img {
     width: 100%;
 }
 
@@ -319,7 +319,7 @@ span {
     flex-direction: column;
 }
 
-.contactos {
+.contact {
     display: flex;
     align-items: center;
     margin: 0 10px;
@@ -331,7 +331,7 @@ span {
     width: fit-content;
 }
 
-.contactos:hover {
+.contact:hover {
     color: #6155A6;
 }
 
@@ -461,18 +461,18 @@ label {
         display: none;
     }
 /* SECTION "HOLA" */
-    .container-hello {
+    .section-presentation {
         flex-direction: column;
         height: 100vh;
         margin: 20px 10px;
     }
 
-    .container-presentation {
+    .presentation-container {
         align-items: center;
         text-align: center;
     }
 
-    .container-helloimg {
+    .container-presentation-img {
         width: 200px;
         height: 200px;
     }
@@ -545,7 +545,7 @@ label {
         width: 100%;
     }
 
-    .contactos {
+    .contact {
         margin: 0;
         padding: 0;
     }
@@ -575,18 +575,18 @@ label {
         display: none;
     }
 /* SECTION "HOLA" */
-    .container-hello {
+    .section-presentation {
         flex-direction: column;
         height: 100vh;
         margin: 20px 0;
     }
 
-    .container-presentation {
+    .presentation-container {
         align-items: center;
         text-align: center;
     }
 
-    .container-helloimg {
+    .container-presentation-img {
         margin: 0;
     }
 
@@ -656,7 +656,7 @@ label {
         flex-direction: row;
         flex-wrap: wrap;
     }
-    .contactos {
+    .contact {
         margin: 0;
         padding: 5px;
         width: 50%;
@@ -686,17 +686,17 @@ label {
         display: none;
     }
 
-    .container-hello {
+    .section-presentation {
         flex-direction: column;
         height: 100vh;
     }
 
-    .container-presentation {
+    .presentation-container {
         align-items: center;
         text-align: center;
     }
 
-    .container-helloimg {
+    .container-presentation-img {
         margin: 0;
     }
 
@@ -762,7 +762,7 @@ label {
         flex-wrap: wrap;
     }
 
-    .contactos {
+    .contact {
         width: 40%;
     }
 
@@ -774,7 +774,7 @@ label {
 
 @media (min-width: 1024px) and (max-width: 1200px) {
 
-    .container-presentation {
+    .presentation-container {
         margin: 0 20px;
     }
 
