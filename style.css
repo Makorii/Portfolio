@@ -85,7 +85,7 @@
     align-items: flex-start;
 }
 
-.hello-title {
+.presentation-title {
     font-weight: 600;
     font-size: 3.1rem;
 }
@@ -97,7 +97,7 @@ span {
     color: #ffabe1;
 }
 
-.hello-description {
+.presentation-description {
     font-size: 1.8rem;
     margin: 20px 0;
 }
