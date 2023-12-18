@@ -178,10 +178,6 @@ span {
     color: #3d8fc6;
 }
 
-.fa-sass {
-    color: #cc6699;
-}
-
 .fa-square-js {
     color: #f0db4f;
 }
@@ -507,10 +503,6 @@ label {
         margin: 20px 0;
     }
 /* SECTION "MIS PROYECTOS" */
-    .container-description {
-        width: 90%;
-    }
-
     .projects {
         justify-content: center;
     }
