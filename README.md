@@ -1,6 +1,6 @@
 # Portfolio :sparkles:
 
-![imagen del portfolio](https://i.imgur.com/RclxOmC.png)
+![imagen del portfolio](https://i.imgur.com/9L43Gug.png)
 
 ## Primer proyecto ADAITW: Portfolio
 
